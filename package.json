@@ -1,0 +1,52 @@
+{
+  "name": "magento-frontend",
+  "version": "1.0.0",
+  "description": "ReactJS Frontend with SSR for Magento2",
+  "main": "backend/index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel dev:server dev:build",
+    "dev:build": "webpack --watch --config webpack.dev.js",
+    "dev:server": "nodemon --exec babel-node \"./backend/index.js\" --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/MartinSchillinger/magento-frontend.git"
+  },
+  "keywords": [
+    "React",
+    "SSR",
+    "Magento2",
+    "Express"
+  ],
+  "author": "Martin Schillinger",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MartinSchillinger/magento-frontend/issues"
+  },
+  "homepage": "https://github.com/MartinSchillinger/magento-frontend#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.14.8",
+    "@babel/core": "^7.15.0",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "babel-watch": "^7.5.0",
+    "css-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "nodemon": "^2.0.12",
+    "npm-run-all": "^4.1.5",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
